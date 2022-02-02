@@ -105,6 +105,9 @@ if(status != "")
            document.getElementById("numObjects").innerHTML = object_name + "found";
            console.log("stop");
            song.stop();
+           synth = window.speechSynthesis;
+          utterThis = new SpeechSynthesisUtterance(object_name + "Found");
+          synth.speak(utterThis);
           }
            else
            {
