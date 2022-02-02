@@ -61,6 +61,7 @@ video.hide();
 
 function modelLoaded()
 {
+
 console.log("Model loaded");
 status = true;
 
@@ -118,6 +119,7 @@ if(status != "")
         
         
     }
+
     if(objects.length == 0) 
     console.log(results);
     objects = results;
@@ -126,7 +128,16 @@ if(status != "")
 
 }
 }
-  
+  function gotResults(error , results)
+  {
+
+    if(error)
+    {
+      console.log(error)
+    }
+    console.log(results);
+    objects=results;
+  }
   </script>
 </body>
 </html>
