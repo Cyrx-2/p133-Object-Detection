@@ -86,7 +86,7 @@ if(status != "")
   g = random(255);
   b = random(255);
  
-  objectDetector.detect(video, gotResults);
+  objectsDetector.detect(video, gotResults);
     for(i = 0; i< objects.length; i++)
     {
         document.getElementById("status").innerHTML = "Status: objects Detected";
